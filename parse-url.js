@@ -30,4 +30,5 @@ module.exports = function parse_url(req)
 
 	req.pathname = decodeURIComponent(pathname)
 	req.query = decodeURIComponent(query)
-	req.hash = decodeURIComponent(hash) }
+	req.hash = decodeURIComponent(hash)
+	return req }
